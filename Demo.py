@@ -1,7 +1,7 @@
 import random
 
 while True:
-    player = input("输入:(1:剪刀 2:石头 3:布)")
+    player = input("输入:(1:剪刀 2:石头 3:布 0:退出)")
 
     computer = str(random.randint(1, 3))
     computer_ = ""
@@ -21,6 +21,8 @@ while True:
         print("输了:(")
     elif player == "1" and computer == "3" or player == "2" and computer == "1" or player == "3" and computer == "2":
         print("赢了:)")
+    elif player == "0":
+        break
     else:
         print("你在输入什么？？？？？")
 
