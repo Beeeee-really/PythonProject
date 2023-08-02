@@ -23,3 +23,9 @@ while True:
         print("赢了:)")
     else:
         print("你在输入什么？？？？？")
+
+    i = 0
+    while i < 10000:
+        print("-", end="")
+        i += 1
+    print("")
