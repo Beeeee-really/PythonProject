@@ -26,7 +26,7 @@ while not done:
 
 
     class MySprite(pygame.sprite.Sprite):
-        def __int__(self):
+        def __init__(self):
             super().__init__()
             self.image = pygame.Surface([50, 50])
             self.image.fill((255, 0, 0))
@@ -38,21 +38,6 @@ while not done:
     my_group = pygame.sprite.Group()
     my_sprite = MySprite()
     my_group.add(my_sprite)
-
-
-    class other_Sprite(pygame.sprite.Sprite):
-        # 定义一个精灵类，继承自pygame.sprite.Sprite
-        def __int__(self):
-            super().__init__()
-            self.image = pygame.Surface([50, 50])  # 定义一个高50 宽50的表面
-            self.image.fill(red)  # 设置颜色
-            self.rect2 = self.image.get_rect()
-            self.rect2.x = 0
-            self.rect2.y = 0
-
-
-    other_Sprite = other_Sprite()
-    my_group.add(other_Sprite)
 
     # 检测键盘输入
     if event.type == pygame.KEYDOWN:
@@ -73,5 +58,7 @@ while not done:
     if event.type == pygame.MOUSEBUTTONDOWN:
         cube_color = (random.randint(0, 250), random.randint(0, 250), random.randint(0, 250))
         print("鼠标点击")
+
+    my_group.draw(screen)
 
     pygame.display.update()
