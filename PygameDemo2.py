@@ -59,6 +59,7 @@ while not done:
         cube_color = (random.randint(0, 250), random.randint(0, 250), random.randint(0, 250))
         print("鼠标点击")
 
+
     my_group.draw(screen)
 
     pygame.display.update()
