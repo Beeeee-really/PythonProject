@@ -20,7 +20,7 @@ pygame.display.set_caption('贪吃蛇')
 clock = pygame.time.Clock()
 
 snake_block = 10
-snake_speed = 1
+snake_speed = 5
 
 font_style = pygame.font.SysFont("bahnschrift", 25)
 score_font = pygame.font.SysFont("comicsansms", 35)
